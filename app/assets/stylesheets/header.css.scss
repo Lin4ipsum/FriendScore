@@ -1,0 +1,34 @@
+header {
+  background: #fff;
+  width: 100%;
+}
+.header-container {
+  background: white;
+  height: 74px;
+  margin: 0 auto;
+  position: relative;
+  width: 960px;
+}
+
+.logo {
+  margin-left: 35px;
+  margin-top:-30px; /*half the height of the image*/ 
+ 
+  position: absolute;
+  top:50%;
+
+ 
+}
+.company-name {
+  background:white;
+  color: #8d4d89;
+  font-family: 'Paprika', cursive;
+  font-size:2em;
+  margin-bottom:0;
+  margin-left:70px;
+  margin-top:-25px;
+  padding:5px; 
+  top:50%; 
+  position: absolute
+
+}

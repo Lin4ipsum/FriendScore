@@ -1,0 +1,125 @@
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]--> 
+  
+  <div id="main" role="main">
+    <section id="left">
+      <div class="photo-main">
+        <div class="profile-picture"></div>
+      </div>
+      <div class="greeting">
+        <h1>Hello there, John Smith!</h1>
+        <p>Your FriendScore profile is 50% complete</p>
+        <progress value="50" max="100">75%</progress>
+      </div>
+      <ul class="left-nav">
+        <li><p><i class="icon-star "></i>Friendship Star</p></li>
+        <li><p><i class="icon-user "></i>My Profile</p></li>
+        <li><p><i class="icon-bullhorn "></i>Buddy Beat</p></li>
+        <li><p><i class="icon-group "></i>Friends</p></li>
+        <li><p><i class="icon-heart-empty "></i>Friend Reward Points</p></li>
+      </ul>
+    </section><!-- /left -->
+    
+    <section id="right">
+      
+      <div class="notice">
+        <div class="notice-content">
+          <p class="bold">John, you have 1 New Message.</p>
+          <p>Send messages to your friends.</p>
+          <button>View Messages</button>
+        </div>
+      </div>
+      
+      <div class="friend-star">
+        <header><p><i class="icon-star "></i>Friendship Star</p></header>
+        <div class="rainbowstar"></div>
+        <p>This is your friendship star. Hovering over different corners of the star brings up relavant information about your friendships.</p>
+      </div>
+      
+      <div class='activity'>  
+        <div class="profiles">
+          <header>
+            <p class="right"><i class="icon-user "></i>My Profile </p>
+          </header>
+          <div class="social-media">
+            <div class="social-media-icons"></div>
+          </div>
+        </div>
+      
+        <div class="buddy-beat">
+          <header>
+            <p class="right"><i class="icon-bullhorn"></i>Buddy Beat</p>
+          </header>
+          <p>Get the latest buddy info. Check out what your friends are doing. Update your status.</p>
+        </div>
+      
+        <div class="friends">
+         <header>
+            <p class="right"><i class="icon-group"></i>Friends</p>
+            <div class="left">
+              <p>active</p>
+              <div class="active"></div>
+            </div>
+          </header>
+          <ul>
+            <li>
+              <div class="friend">
+                <div class="friend-pic"></div>
+                <p>Best Friend:</p>
+                <p>Joseph Thompson</p>
+              </div>
+            </li>
+            <li>
+              <div class="professional">
+                <div class="professional-pic"></div>
+                <p>Work Friend:</p>
+                <p>Adam Rogers</p>
+              </div>
+            </li>
+            <li>
+              <div class="family">
+                <div class="family-pic"></div>
+                <p>Family Friend:</p>
+                <p>Nicole Lowes</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    <div class="friend-rewards">
+      <header>
+         <p class="right"><i class="icon-heart-empty"></i>Friend Reward Points</p>
+      </header>
+      <div class="points">
+        <p>800 Points</p>
+      </div>
+    </div>
+      
+    </section>
+    <!-- / right -->
+
+  </div>
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+  <!-- scripts concatenated and minified via build script -->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end scripts -->
+
+  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+       mathiasbynens.be/notes/async-analytics-snippet -->
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
