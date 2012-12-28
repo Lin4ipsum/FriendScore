@@ -1,34 +1,31 @@
 header {
-  background: #fff;
+  background: none;
+  font-size: 100%;
   width: 100%;
 }
+
+header h1 {
+  color: rgb(65, 87, 107);
+  font-family: 'Lobster', cursive;
+  font-size: 6em;
+  margin: 0;
+  padding-top: 15px;
+}
+
 .header-container {
-  background: white;
-  height: 74px;
-  margin: 0 auto;
+  background: none;
+  height: 135px;
+  margin: 0 auto 46px auto;
   position: relative;
   width: 960px;
+  text-align: center;
 }
 
-.logo {
-  margin-left: 35px;
-  margin-top:-30px; /*half the height of the image*/ 
- 
+.header-container p {
+  color: rgb(214, 141, 47);
+  font-size: 2em;
+  font-family: 'PT Sans', sans-serif;
+  margin: -15px 0 0 0;
   position: absolute;
-  top:50%;
-
- 
-}
-.company-name {
-  background:white;
-  color: #8d4d89;
-  font-family: 'Paprika', cursive;
-  font-size:2em;
-  margin-bottom:0;
-  margin-left:70px;
-  margin-top:-25px;
-  padding:5px; 
-  top:50%; 
-  position: absolute
-
+  left: 50%;
 }

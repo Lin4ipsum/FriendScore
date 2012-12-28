@@ -1,24 +1,14 @@
 footer {
-  background: #fff;
-  background-image: url('/assets/rainbowborder.gif');
-  background-repeat: repeat-x;
+  background: none;
   clear: both;
   width: 100%;
 }
 
 .footer-container {
-  background: #fff;
+  background: none;
   height: 150px;
   margin: 0 auto;
   width: 960px;
-}
-
-.rainbow {
-  background-image: url('/assets/rainbowborder.gif');
-  background-repeat: no-repeat;
-  height: 5px;
-  margin: 0 auto;
-  width: auto;
 }
 
 nav {
@@ -34,16 +24,4 @@ footer ul {
 footer ul li {
   color: #666666;
   list-style: none;
-}
-
-.like-us {
-  background-image:url('/assets/likeus.jpg');
-  background-repeat: no-repeat;
-  background-position:center;
-  bottom: 70%;
-  height: 40px;
-  left: 70%;
-  position: absolute;
-  right: 30%;
-  width: 225px;
 }

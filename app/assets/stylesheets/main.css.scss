@@ -2,9 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+html {
+  background: rgb(245, 244, 232);
+  -moz-box-shadow:inset 0px 2px 75px rgb(65, 134, 155);
+  -webkit-box-shadow: inset 0px 2px 275px rgb(65, 134, 155);
+  box-shadow:inset 0px 2px 75px rgb(65, 134, 155);
+}
+
 body {
-	/*background: #8ca1be;*/
-  background-image: url("bokeh.jpg");
+  color: rgb(69, 95, 120);
 	font-family: arial;
 	font-size:100%;
 	width: 100%; }
@@ -16,10 +22,6 @@ body {
   width: 960px;}	
 	
 #left {
-	background: #e5e9f2;
-	border-radius: 15px;
-	border: 1px solid #999;
-	color: #773282;
 	float: left;
 	margin-left: 50px;
 	margin-right: 30px;
@@ -30,41 +32,38 @@ body {
 }
 
 .photo-main .profile-picture {
-  background-image:url(/assets/man-smiling.jpg);
+  background-image:url(/assets/linda2.jpg);
   background-repeat:no-repeat;
-  background-position: 41% 4%;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  height:250px;
-}
-
-#left .greeting {
-  margin: 0 15px;
-}
-
-.greeting h1 {
-	font-size: 1.5em;
-	font-weight: 300;
-	margin: 10px 0 0 0; 
-}
-
-.greeting p {
-  font-size:.8em;
-  margin: 10px 0;
+  background-position: 0% 34%;
+  border-radius: 100%;
+  border: 6px solid rgb(214, 141, 47);
+  -webkit-box-shadow: 0px -3px 12px rgba(46, 88, 77, 0.33);
+  -moz-box-shadow:    0px -3px 12px rgba(46, 88, 77, 0.33);
+  box-shadow:         0px -3px 12px rgba(46, 88, 77, 0.33);
+  height:200px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
  
-.greeting progress {
+progress {
  	display:block;
 	margin:0 auto 15px;
 	width:100%;
-
 } 
 
 .left-nav {
+  background: #e5e9f2;
+  border-radius: 15px;
+  border: 1px solid #999;
   line-height: .8em;
-  margin-top: 7px; 
+  margin: 0; 
   padding-left:0;}
-	
+
+.left-nav ul {
+  padding: 0;
+}
 	
 .left-nav li i { 
  font-size: 150%;
@@ -74,6 +73,17 @@ body {
 .left-nav li {
  border-top:1px solid #999;
  list-style:none;
+}
+
+.left-nav li a {
+  color: rgb(69, 95, 120);
+  text-decoration:none;}
+
+.left-nav li a:hover {
+  color: rgb(214, 141, 47);}
+
+.left-nav li:first-child {
+  border-top: none;
 }
 
 .left-nav li p {
@@ -88,101 +98,66 @@ body {
 	display: block;
 	width: 60%;}
 
-.notice {
-  background: rgb(203, 223, 233);
+.skill-level {
+  background: rgb(220, 240, 217);
   border: 1px solid #39854C;
-  color: #773282;
+  -webkit-box-shadow: 0px -3px 12px rgba(46, 88, 77, 0.33);
+  -moz-box-shadow:    0px -3px 12px rgba(46, 88, 77, 0.33);
+  box-shadow:         0px -3px 12px rgba(46, 88, 77, 0.33);
   border-radius: 15px;
-  height: 170px;
+  height: auto;
   margin-bottom: 25px;
 }
 
-.notice-content {
-  margin-left: 17px;
+.skill-level-content {
+  color: rgb(57, 133, 76);
+  margin: 20px 20px 0 20px;
+}
+
+.skill-level-content ul {
+  padding-left: 20px;
+}
+
+.skill-level-content ul li {
+  list-style: none;
+  padding-bottom: 5px;
 }
 
 .bold {
-  font-size: 160%;
+  font-size: 1.1em;
   margin: 0;
-  padding-top: 20px;
 }
 
-.notice-content p {
-  margin-top: 6px;
+#progressbar {
+  background-color: red;
+  border-radius: 12px; /* (height of inner div) / 2 + padding */
+  padding: 2px;
+  width:150px;
+            
 }
 
-.notice-content button {
-  background: rgb(251,183,67); /* Old browsers */
-  background: -moz-linear-gradient(top,  rgba(251,183,67,1) 17%, rgba(253,155,31,1) 55%, rgba(248,128,0,1) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(17%,rgba(251,183,67,1)), color-stop(55%,rgba(253,155,31,1)), color-stop(100%,rgba(248,128,0,1))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(251,183,67,1) 17%,rgba(253,155,31,1) 55%,rgba(248,128,0,1) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(251,183,67,1) 17%,rgba(253,155,31,1) 55%,rgba(248,128,0,1) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(251,183,67,1) 17%,rgba(253,155,31,1) 55%,rgba(248,128,0,1) 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(251,183,67,1) 17%,rgba(253,155,31,1) 55%,rgba(248,128,0,1) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbb743', endColorstr='#f88000',GradientType=0 ); /* IE6-9 */
-  border-radius: 15px;
-  color: #ffffff;
-  font-size: 1.3em;
-  font-weight: 400;
-  height: 36px;
-  margin-top: 23px;
-  width: 170px;
-  text-align: left;
-}
- 
-.friend-star {
-  background: #fff;
-  border-radius: 15px;
-  border: 1px solid #999;
-  height: 400px;
-  margin-bottom: 25px;
-  position: relative;
+#progressbar div {
+   background-color: green;
+   width: 40%; /* Adjust with JavaScript */
+   height: 20px;
+   border-radius: 10px;
 }
 
-.friend-star header, .activity header, .friend-rewards header {
+
+.skills header {
+  color: rgb(69, 95, 120);
   background: #e5e9f2;
   border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 	border-bottom: 1px solid #999;
-	color: #773283;
 	height: 50px;
 }
 
-.friend-star header p {
-  font-size: 1.1em;
-  line-height: 50px;
-  margin-left: 17px;
-  margin-top: 0;
+.skills {
+  color: rgb(69, 95, 120);
 }
 
-.friend-star header i {
-  font-size: 150%;
-  margin-right: 10px;
-}
-
-.rainbowstar {
-  background-color: #fefefc;
-  background-image:url('/assets/rainbowstar.jpg');
-  background-repeat: no-repeat;
-  background-position:center; 
-  border-bottom: 1px solid #999;
-  display: block;
-  height: 65%;
-  width: 100%;
-}
-
-.friend-star p {
-  color: #773282;
-  font-size: 1.1em;
-  line-height: 22px;
-  margin: 20px 30px 0;
-}
-
-.activity {
-  color: #773282;
-}
-
-.profiles, .buddy-beat, .friends, .friend-rewards {
+.sub-skills {
   background: #fff;
   border: 1px solid #999;
   border-radius: 15px;
@@ -193,8 +168,16 @@ body {
   padding-bottom: 10px;
 }
 
+blockquote {
+  margin-top:0;
+  margin-bottom:0;
+}
 
-.activity header, .friend-rewards header {
+.html5 p {
+  margin-bottom: 0;
+}
+
+.skills header {
   background: #e5e9f2;
   border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
@@ -202,11 +185,16 @@ body {
 	height: 50px;
 }
 
-.activity header p, .friend-rewards header p {
-   display: inline;
+.skills header p {
+  display: inline;
   font-size: 1.1em;
   line-height: 50px;
   margin-left: 17px;
+}
+
+.skills p {
+  margin-top: 20px; 
+  margin-left: 20px;
 }
 
 header i {
@@ -218,137 +206,8 @@ header i {
   margin-right: 5px;
 }
 
-.social-media {
-  background: #fff;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  height: 50px;
-  padding-top: 13px;
-}
-
-.social-media-icons {
-  background-image:url('/assets/socialmedia1.gif');
-  background-repeat: no-repeat;
-  height: 100%;
-  margin-left: 13px;
-}
-
-.membership, .friends {
-	margin-top: -10px;
-}
-
-.buddy-beat p, .membership p {
+.css3 p, .github p {
   font-size: 1.1em;
   margin-top: 20px;
   margin-left: 20px;
-}
-
-.friends {
-  border-radius: 15px;
-  margin-bottom: 25px;
-  padding-bottom: 0;
-}
-
-.friends ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-.friends ul li {
-  border-bottom: 1px solid #999;
-  height: 75px;
-  padding-bottom: 2px;
-}
-
-.friends ul li:last-child {
-  border: none;
-}
-
-.friend {
-  position: relative;
-}
-
-.friend-pic {
-  background-image:url('/assets/Person3.jpg');
-  background-repeat: no-repeat;
-  background-size: 65px 85px;
-  height: 70px;
-  margin-left: 8px;
-  margin-top:4px;
-  position: absolute;
-  width: 70px;
-}
-
-.friend p, .professional p, .family p {
-  color: rgb(248, 128, 0);
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 82px;
-}
-
-.friend p:last-child, .professional p:last-child, .family p:last-child {
-  color: rgb(119, 50, 130);
-}
-
-.friend p:first-of-type, .professional p:first-of-type, .family p:first-of-type  {
-  font-size: .9em;
-  font-weight:700;
-  padding-top: 15px;
-}
-
-.friend p:last-of-type, .professional p:last-of-type, .family p:last-of-type {
-  font-size: 1.1em;
-  padding-top: 5px;
-}
-
-.professional-pic {
-  background-image:url('/assets/Person2.jpg');
-  background-repeat: no-repeat;
-  background-size: 65px 85px;
-  height: 70px;
-  margin-left: 9px;
-  margin-top: 4px;
-  position: absolute;
-  width: 70px;
-}
-
-.family-pic {
-  background-image:url('/assets/Person1.jpg');
-  background-repeat: no-repeat;
-  background-size: 65px 85px;
-  height: 70px;
-  margin-left: 9px;
-  margin-top: 4px;
-  position: absolute;
-  width: 70px;
-}
-
-.friend-rewards {
-  background: #fff;
-  border: 1px solid #999;
-  border-radius: 15px;
-  height: 125px;
-  margin-bottom: 40px;
-}
-
-
-.points {
-  background: rgb(240, 6, 170);
-  -webkit-box-shadow: 1px 1px 4px rgba(50, 50, 50, 0.6);
-  -moz-box-shadow:    1px 1px 4px rgba(50, 50, 50, 0.6);
-  box-shadow:         1px 1px 4px rgba(50, 50, 50, 0.6);
-  margin-top: 13px;
-  margin-left: 13px;
-  padding: 10px;
-  width: 29%;
-}
-
-.points p {
-  color: #fff;
-  display: inline;
-  font-size: 1.3em;
-  height: 100px;
-  width: 100px;
 }
